@@ -1,0 +1,142 @@
+
+/* barlow-regular - latin */
+@font-face {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/barlow-v5-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/barlow-v5-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* barlow-600 - latin */
+  @font-face {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 600;
+    src: local(''),
+         url('../fonts/barlow-v5-latin-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/barlow-v5-latin-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+*{box-sizing: border-box;}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Barlow', "arial", sans-serif;
+}
+
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+
+.text{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom:100px;
+    font-size: 40px;
+    line-height: 25px;
+}
+label{
+    display: flex;
+    align-items: center;
+}
+.sport{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    width: 200px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.sport__info{
+    margin-bottom: 25px;
+    position: relative;
+    
+}
+
+.sport__controller{
+    position: absolute;
+    right: 206px;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+input:checked ~ .sport__controller--first {
+    background-image: url(../img/table-tennis.png);
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position: center;
+}
+
+input:disabled ~ .sport__controller--first{
+    background-image: url(../img/table-tennis.png);
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position: center;
+}
+
+
+input:checked ~ .sport__controller--second{
+    background-image: url(../img/basketball-ball.png);
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position: center;
+}
+
+input:disabled ~ .sport__controller--second{
+    background-image: url(../img/table-tennis.png);
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position: center;
+}
+
+
+input:checked ~ .sport__controller--third{
+    background-image: url(../img/volleyball-ball.png);
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position: center;
+}
+
+input:disabled ~ .sport__controller--third{
+    background-image: url(../img/table-tennis.png);
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position: center;
+}
+
+input:checked ~ .sport__controller--hockey{
+   background-image: url(../img/hockey-puck.png);
+    background-size: 15px;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 1px solid #ccc;
+    opacity: 0.4;  
+}
+
+input:disabled ~ .sport__controller--hockey{
+    background-image: url(../img/table-tennis.png);
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position: center;
+    border: 1px solid #ccc;
+    opacity: 0.4
+}
+
+input:checked ~ .sport__hockey{
+opacity: 0.4;
+}
+
