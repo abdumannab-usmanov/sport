@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>sport</title>
     <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/main.min.css">
-    <!-- <link rel="stylesheet" href="./css/main.css"> -->
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
 
@@ -19,15 +18,16 @@
 <label class="sport__info"> 
     Stol tennis
     
-    <input class="visually-hidden" type="checkbox" name="sport_tennis" value="tennis">
+    <input class="visually-hidden"  type="checkbox"  name="sport_tennis" value="tennis">
     <span class="sport__controller sport__controller--first"></span>
 </label>
 
 <label class="sport__info">
-    Basketbol
     
-    <input class="visually-hidden" type="checkbox" name="sport_basketbol" value="basketbol">
+    
+    <input class="visually-hidden" disabled type="checkbox" name="sport_basketbol" value="basketbol">
     <span class="sport__controller sport__controller--second"></span>
+    <span class="sport__title">Basketbol</span>
 </label>
 
 <label class="sport__info">
@@ -37,12 +37,11 @@
     <span class="sport__controller sport__controller--third"></span>
 </label>
 
-<label class="sport__info sport__info--title">
-    
-    
-    <input class="visually-hidden" type="checkbox" name="sport_hockey" value="hockey">
+<label class="sport__info sport__info--title" >
+ 
+    <input class="visually-hidden"  checked  disabled  type="checkbox" name="sport_hockey" value="hockey">
     <span class="sport__controller sport__controller--hockey"></span>
-    <span class="sport__hockey">Hockey</span>
+    <span class="sport__title">Hockey</span>
 </label>
 
 

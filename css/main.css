@@ -58,6 +58,7 @@ label{
     line-height: 25px;
 }
 
+
 .sport__info{
     margin-bottom: 25px;
     position: relative;
@@ -82,10 +83,12 @@ input:checked ~ .sport__controller--first {
 }
 
 input:disabled ~ .sport__controller--first{
-    background-image: url(../img/table-tennis.png);
-    background-repeat: no-repeat;
-    background-size: 15px;
-    background-position: center;
+ color: #ccc;
+ opacity: 0.4;
+}
+
+input:focus{
+    box-shadow: 10px 5px 5px white;
 }
 
 
@@ -97,10 +100,8 @@ input:checked ~ .sport__controller--second{
 }
 
 input:disabled ~ .sport__controller--second{
-    background-image: url(../img/table-tennis.png);
-    background-repeat: no-repeat;
-    background-size: 15px;
-    background-position: center;
+    border: 1px solid #ccc;
+    opacity: 0.4
 }
 
 
@@ -112,10 +113,8 @@ input:checked ~ .sport__controller--third{
 }
 
 input:disabled ~ .sport__controller--third{
-    background-image: url(../img/table-tennis.png);
-    background-repeat: no-repeat;
-    background-size: 15px;
-    background-position: center;
+    border: 1px solid #ccc;
+    opacity: 0.4
 }
 
 input:checked ~ .sport__controller--hockey{
@@ -124,19 +123,18 @@ input:checked ~ .sport__controller--hockey{
     background-position: center;
     background-repeat: no-repeat;
     border: 1px solid #ccc;
-    opacity: 0.4;  
+    
 }
 
 input:disabled ~ .sport__controller--hockey{
-    background-image: url(../img/table-tennis.png);
-    background-repeat: no-repeat;
-    background-size: 15px;
-    background-position: center;
     border: 1px solid #ccc;
     opacity: 0.4
 }
 
-input:checked ~ .sport__hockey{
-opacity: 0.4;
+input:disabled ~ .sport__title{
+    color: #ccc;
+    opacity: 0.4;
 }
+
+
 
